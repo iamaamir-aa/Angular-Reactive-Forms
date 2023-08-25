@@ -1,0 +1,59 @@
+<div class="container">
+  <h2>User Settings</h2>
+  <form #form="ngForm" ngNativeValidate>
+     <div class="mb-3">
+      <label for="name">Name</label>
+      <input id="name" name="name" class="form-control" [(ngModel)]="t" #nameField='ngModel' />
+    </div>
+    
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Default checkbox
+      </label>
+    </div>
+
+
+    <h5>UI</h5>
+    <div class="form-check ">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Dark
+      </label>
+    </div>
+
+    <div class="form-check ">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Medium
+      </label>
+    </div>
+
+
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+      <label class="form-check-label" for="flexRadioDefault3">
+        Light
+      </label>
+    </div>
+  <div class="mb-3">
+    <label for="subscriptionType">Subscription Type</label>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Open this select menu</option>
+      <option value="1">Monthly</option>
+      <option value="2">Annual</option>
+      <option value="3">Lifetime</option>
+    </select>
+
+
+  </div>
+  <div class="mb-3">
+    <label for="notes">Notes</label>
+    <textarea name="notes" id="notes" class="form-control"  rows="3"></textarea>
+  </div>
+
+
+   <button class="btn btn-primary ">Send</button>
+    </form>
+  </div>
+
